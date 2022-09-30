@@ -10419,6 +10419,15 @@ def main_sign_in():
                                 grand_entry_1.delete(0, END)
                                 grand_entry_1.insert(0,round(sum_iii,2))
 
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
+
                                 try:
                                     x1 = float(grd_str.get())
                                 except:
@@ -10993,6 +11002,15 @@ def main_sign_in():
                                 grand_entry_1.delete(0, END)
                                 grand_entry_1.insert(0,round(sum_iii,2))
 
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
+
                                 try:
                                     x1 = float(grd_str.get())
                                 except:
@@ -11006,6 +11024,7 @@ def main_sign_in():
                                 bal_entry_1.insert(0,round(sum_iv,2))
 
                                 
+
                             ai_entry_p_1_3=Spinbox(sr_Canvas_1,width=13,from_=0 , command=multiply_num_i1_sl,to=1000,justify=LEFT,background='#2f516f',foreground='white')
                             window_ai_entry_p_1_3 = sr_Canvas_1.create_window(0, 0, anchor="nw", height=30, window=ai_entry_p_1_3,tags=('aientry5'))
                             
@@ -11607,6 +11626,15 @@ def main_sign_in():
                                 grand_entry_1.delete(0, END)
                                 grand_entry_1.insert(0,round(sum_iii,2))
 
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
+
                                 try:
                                     x1 = float(grd_str.get())
                                 except:
@@ -12180,6 +12208,15 @@ def main_sign_in():
                                 grand_entry_1.delete(0, END)
                                 grand_entry_1.insert(0,round(sum_iii,2))
 
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
+
                                 try:
                                     x1 = float(grd_str.get())
                                 except:
@@ -12191,6 +12228,7 @@ def main_sign_in():
                                 sum_iv = x1-x2
                                 bal_entry_1.delete(0, END)
                                 bal_entry_1.insert(0,round(sum_iv,2))
+
 
                             
                             ai_entry_2_2=Spinbox(sr_Canvas_1,width=13,from_=0 ,command=multiply_num_sl_i2,to=1000,justify=LEFT,background='#2f516f',foreground='white')
@@ -12792,6 +12830,15 @@ def main_sign_in():
                                 grand_entry_1.delete(0, END)
                                 grand_entry_1.insert(0,round(sum_iii,2))
 
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
+
                                 try:
                                     x1 = float(grd_str.get())
                                 except:
@@ -13362,6 +13409,15 @@ def main_sign_in():
                                 sum_iii = m1+m2
                                 grand_entry_1.delete(0, END)
                                 grand_entry_1.insert(0,round(sum_iii,2))
+
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
 
                                 try:
                                     x1 = float(grd_str.get())
@@ -13975,6 +14031,15 @@ def main_sign_in():
                                 grand_entry_1.delete(0, END)
                                 grand_entry_1.insert(0,round(sum_iii,2))
 
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
+
                                 try:
                                     x1 = float(grd_str.get())
                                 except:
@@ -14545,6 +14610,15 @@ def main_sign_in():
                                 sum_iii = m1+m2
                                 grand_entry_1.delete(0, END)
                                 grand_entry_1.insert(0,round(sum_iii,2))
+
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
 
                                 try:
                                     x1 = float(grd_str.get())
@@ -15841,17 +15915,26 @@ def main_sign_in():
                                 bgrand_entry_1.insert(0,round(sum_iii,2))
 
 
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
+
                                 try:
-                                    x1 = float(bgrd_str.get())
+                                    x1 = float(grd_str.get())
                                 except:
                                     x1 = 0.0
                                 try:
-                                    x2 = float(bamount_entry_1.get())
+                                    x2 = float(amount_entry_1.get())
                                 except:
                                     x2 = 0.0
                                 sum_iv = x1-x2
-                                bbal_entry_1.delete(0, END)
-                                bbal_entry_1.insert(0,round(sum_iv,2))
+                                bal_entry_1.delete(0, END)
+                                bal_entry_1.insert(0,round(sum_iv,2))
 
 
                             bu_inv_1_4=Spinbox(sr_Canvas_1,width=13,from_=0 ,to=1000,justify=LEFT,command=multiply_num_sl_i5,background='#2f516f',foreground='white')
@@ -17042,17 +17125,26 @@ def main_sign_in():
                                 bgrand_entry_1.insert(0,round(sum_iii,2))
 
 
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
+
                                 try:
-                                    x1 = float(bgrd_str.get())
+                                    x1 = float(grd_str.get())
                                 except:
                                     x1 = 0.0
                                 try:
-                                    x2 = float(bamount_entry_1.get())
+                                    x2 = float(amount_entry_1.get())
                                 except:
                                     x2 = 0.0
                                 sum_iv = x1-x2
-                                bbal_entry_1.delete(0, END)
-                                bbal_entry_1.insert(0,round(sum_iv,2))
+                                bal_entry_1.delete(0, END)
+                                bal_entry_1.insert(0,round(sum_iv,2))
 
                             bu_inv_2_4=Spinbox(sr_Canvas_1,width=13,from_=0 ,to=1000,justify=LEFT,command=multiply_num_sl_i6,background='#2f516f',foreground='white')
                             window_bu_inv_2_4 = sr_Canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_2_4,tags=('bient18'),state=HIDDEN)
@@ -18242,17 +18334,26 @@ def main_sign_in():
                                 bgrand_entry_1.insert(0,round(sum_iii,2))
 
 
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
+
                                 try:
-                                    x1 = float(bgrd_str.get())
+                                    x1 = float(grd_str.get())
                                 except:
                                     x1 = 0.0
                                 try:
-                                    x2 = float(bamount_entry_1.get())
+                                    x2 = float(amount_entry_1.get())
                                 except:
                                     x2 = 0.0
                                 sum_iv = x1-x2
-                                bbal_entry_1.delete(0, END)
-                                bbal_entry_1.insert(0,round(sum_iv,2))
+                                bal_entry_1.delete(0, END)
+                                bal_entry_1.insert(0,round(sum_iv,2))
 
                             bu_inv_3_4=Spinbox(sr_Canvas_1,width=13,from_=0 ,to=1000,command=multiply_num_sl_i7,justify=LEFT,background='#2f516f',foreground='white')
                             window_bu_inv_3_4 = sr_Canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_3_4,tags=('bient19'),state=HIDDEN)
@@ -19442,17 +19543,26 @@ def main_sign_in():
                                 bgrand_entry_1.insert(0,round(sum_iii,2))
 
 
+                                get_inv_sql = "SELECT sum(amtapply) FROM app1_payment WHERE cid_id=%s AND customer=%s"
+                                get_inv_val = (cmp_dtl_i[0],aicomb_1.get())
+                                fbcursor.execute(get_inv_sql,get_inv_val)
+                                get_inv_data = fbcursor.fetchone()
+
+                                amount_entry_1.delete(0,END)
+                                amount_entry_1.insert(0,get_inv_data[0])
+
+
                                 try:
-                                    x1 = float(bgrd_str.get())
+                                    x1 = float(grd_str.get())
                                 except:
                                     x1 = 0.0
                                 try:
-                                    x2 = float(bamount_entry_1.get())
+                                    x2 = float(amount_entry_1.get())
                                 except:
                                     x2 = 0.0
                                 sum_iv = x1-x2
-                                bbal_entry_1.delete(0, END)
-                                bbal_entry_1.insert(0,round(sum_iv,2))
+                                bal_entry_1.delete(0, END)
+                                bal_entry_1.insert(0,round(sum_iv,2))
 
                             
                             bu_inv_4_4=Spinbox(sr_Canvas_1,width=13,from_=0 , command=multiply_num_sl_i8,to=1000,justify=LEFT,background='#2f516f',foreground='white')
@@ -19625,6 +19735,9 @@ def main_sign_in():
                                     for i in inv_data:
                                         rp_tree.insert(parent='',index='end',iid=i,text='',values=(count,str(i[3]) + " " + i[5],i[6],i[17],i[41],0))
                                         count += 1
+                                
+
+                                
 
                             rp_custCombo = ttk.Combobox(sr_Canvas_1,width=15,font=('arial 15'))
                             rp_custCombo['values'] = cust_list
@@ -20219,7 +20332,24 @@ def main_sign_in():
                             rp_label4 = Label(sr_Canvas_1,width=20,height=1,text="Find by invoice number",font=('arial 12'),background='#1b3857',fg="white",anchor="w")
                             sr_Canvas_1.create_window(0,0,window=rp_label4,tags=("label5"))
 
-                            rp_invnum = Entry(sr_Canvas_1,width=20,font=('arial 15'),background='#2f516f',foreground='white')
+                            inv_sql = "SELECT * FROM app1_invoice WHERE cid_id=%s"
+                            inv_val = (comp_data[0],)
+                            fbcursor.execute(inv_sql,inv_val)
+                            inv_data = fbcursor.fetchall()
+
+                            inv_list = []
+                            if not inv_data:
+                                pass
+                            else:
+                                for i in inv_data:
+                                    inv_list.append(str( i[3]) + " - " + i[1])
+
+                            rp_invnum = ttk.Combobox(sr_Canvas_1,width=19,font=('arial 15'),background='#2f516f',foreground='black')
+                            rp_invnum['values'] = inv_list
+                            rp_invnum.current(0)
+                            
+
+                            # rp_invnum = Entry(sr_Canvas_1,width=20,font=('arial 15'),background='#2f516f',foreground='white')
                             sr_Canvas_1.create_window(0,0,anchor='nw',window=rp_invnum,tags=("entry2"))
 
                             rp_label6 = Label(sr_Canvas_1,width=20,height=1,text="Payment method",font=('arial 12'),background='#1b3857',fg="white",anchor="w")
@@ -20980,13 +21110,14 @@ def main_sign_in():
                             def rp_savePayment():
                                 customer = rp_custCombo.get()
                                 email = rp_email.get()
-                                findinvoice = rp_invnum.get()
+                                findinvoice = rp_invnum.get().split(' - ')[0]
                                 pmethod = rp_pmethod.get()
                                 depto = rp_depositto.get()
                                 amtreceived = rp_amntre.get()
                                 amtapply = rp_amnttoapply.get()
                                 amtcredit = rp_amnttocredit.get()
                                 paymdate = rp_pdate.get()
+                                
                                 
                                 try:
                                     descp_list = []
@@ -21473,6 +21604,7 @@ def main_sign_in():
                                             cm_pofsupply.insert(0,comp_data[4])
                                         else:
                                             pass
+                                        
                                 except:
                                     pass
 
@@ -22136,85 +22268,105 @@ def main_sign_in():
 
                             def cm_show_ref(event):
                                 ref_nom=cm_ref.get()
+                                try:
+                                    inv_no = (cm_ref.get()).split(' - ')[0]
 
-                                ref_sql = "SELECT * FROM app1_invoice WHERE cid_id=%s and invoiceid=%s and customername=%s"
-                                ref_val = (comp_data[0],ref_nom,cm_custCombo.get())
-                                fbcursor.execute(ref_sql,ref_val)
-                                ref_data = fbcursor.fetchone()
-                                
+                                    ref_sql = "SELECT * FROM app1_invoice WHERE cid_id=%s and invoiceno=%s and customername=%s"
+                                    ref_val = (comp_data[0],inv_no,cm_custCombo.get())
+                                    fbcursor.execute(ref_sql,ref_val)
+                                    ref_data = fbcursor.fetchone()
+                                    
 
-                                cmt_entry1.delete(0,END)
-                                cmt_entry1.insert(0,ref_data[9])
-                                cmt_entry2.delete(0,END)
-                                cmt_entry2.insert(0,ref_data[10])
-                                cmt_entry3.delete(0,END)
-                                cmt_entry3.insert(0,ref_data[11])
-                                cmt_entry4.delete(0,END)
-                                cmt_entry4.insert(0,ref_data[12])
-                                cmt_entry5.delete(0,END)
-                                cmt_entry5.insert(0,ref_data[13])
-                                cmt_entry6.delete(0,END)
-                                cmt_entry6.insert(0,ref_data[14])
-                                cmt_entry7.delete(0,END)
-                                cmt_entry7.insert(0,ref_data[15])
+                                    cmt_entry1.delete(0,END)
+                                    cmt_entry1.insert(0,ref_data[9])
+                                    cmt_entry2.delete(0,END)
+                                    cmt_entry2.insert(0,ref_data[10])
+                                    cmt_entry3.delete(0,END)
+                                    cmt_entry3.insert(0,ref_data[11])
+                                    cmt_entry4.delete(0,END)
+                                    cmt_entry4.insert(0,ref_data[12])
+                                    cmt_entry5.delete(0,END)
+                                    cmt_entry5.insert(0,ref_data[13])
+                                    cmt_entry6.delete(0,END)
+                                    cmt_entry6.insert(0,ref_data[14])
+                                    cmt_entry7.delete(0,END)
+                                    cmt_entry7.insert(0,ref_data[15])
 
-                                cmt_entry11.delete(0,END)
-                                cmt_entry11.insert(0,ref_data[18])
-                                cmt_entry12.delete(0,END)
-                                cmt_entry12.insert(0,ref_data[19])
-                                cmt_entry13.delete(0,END)
-                                cmt_entry13.insert(0,ref_data[20])
-                                cmt_entry14.delete(0,END)
-                                cmt_entry14.insert(0,ref_data[21])
-                                cmt_entry15.delete(0,END)
-                                cmt_entry15.insert(0,ref_data[22])
-                                cmt_entry16.delete(0,END)
-                                cmt_entry16.insert(0,ref_data[23])
-                                cmt_entry17.delete(0,END)
-                                cmt_entry17.insert(0,ref_data[24])
+                                    cmt_entry11.delete(0,END)
+                                    cmt_entry11.insert(0,ref_data[18])
+                                    cmt_entry12.delete(0,END)
+                                    cmt_entry12.insert(0,ref_data[19])
+                                    cmt_entry13.delete(0,END)
+                                    cmt_entry13.insert(0,ref_data[20])
+                                    cmt_entry14.delete(0,END)
+                                    cmt_entry14.insert(0,ref_data[21])
+                                    cmt_entry15.delete(0,END)
+                                    cmt_entry15.insert(0,ref_data[22])
+                                    cmt_entry16.delete(0,END)
+                                    cmt_entry16.insert(0,ref_data[23])
+                                    cmt_entry17.delete(0,END)
+                                    cmt_entry17.insert(0,ref_data[24])
 
-                                cmt_entry18.delete(0,END)
-                                cmt_entry18.insert(0,ref_data[25])
-                                cmt_entry19.delete(0,END)
-                                cmt_entry19.insert(0,ref_data[26])
-                                cmt_entry20.delete(0,END)
-                                cmt_entry20.insert(0,ref_data[27])
-                                cmt_entry21.delete(0,END)
-                                cmt_entry21.insert(0,ref_data[28])
-                                cmt_entry22.delete(0,END)
-                                cmt_entry22.insert(0,ref_data[29])
-                                cmt_entry23.delete(0,END)
-                                cmt_entry23.insert(0,ref_data[30])
-                                cmt_entry24.delete(0,END)
-                                cmt_entry24.insert(0,ref_data[31])
+                                    cmt_entry18.delete(0,END)
+                                    cmt_entry18.insert(0,ref_data[25])
+                                    cmt_entry19.delete(0,END)
+                                    cmt_entry19.insert(0,ref_data[26])
+                                    cmt_entry20.delete(0,END)
+                                    cmt_entry20.insert(0,ref_data[27])
+                                    cmt_entry21.delete(0,END)
+                                    cmt_entry21.insert(0,ref_data[28])
+                                    cmt_entry22.delete(0,END)
+                                    cmt_entry22.insert(0,ref_data[29])
+                                    cmt_entry23.delete(0,END)
+                                    cmt_entry23.insert(0,ref_data[30])
+                                    cmt_entry24.delete(0,END)
+                                    cmt_entry24.insert(0,ref_data[31])
 
-                                cmt_entry25.delete(0,END)
-                                cmt_entry25.insert(0,ref_data[32])
-                                cmt_entry26.delete(0,END)
-                                cmt_entry26.insert(0,ref_data[33])
-                                cmt_entry27.delete(0,END)
-                                cmt_entry27.insert(0,ref_data[34])
-                                cmt_entry28.delete(0,END)
-                                cmt_entry28.insert(0,ref_data[35])
-                                cmt_entry29.delete(0,END)
-                                cmt_entry29.insert(0,ref_data[36])
-                                cmt_entry30.delete(0,END)
-                                cmt_entry30.insert(0,ref_data[37])
-                                cmt_entry31.delete(0,END)
-                                cmt_entry31.insert(0,ref_data[38])
+                                    cmt_entry25.delete(0,END)
+                                    cmt_entry25.insert(0,ref_data[32])
+                                    cmt_entry26.delete(0,END)
+                                    cmt_entry26.insert(0,ref_data[33])
+                                    cmt_entry27.delete(0,END)
+                                    cmt_entry27.insert(0,ref_data[34])
+                                    cmt_entry28.delete(0,END)
+                                    cmt_entry28.insert(0,ref_data[35])
+                                    cmt_entry29.delete(0,END)
+                                    cmt_entry29.insert(0,ref_data[36])
+                                    cmt_entry30.delete(0,END)
+                                    cmt_entry30.insert(0,ref_data[37])
+                                    cmt_entry31.delete(0,END)
+                                    cmt_entry31.insert(0,ref_data[38])
 
-                                cmt_entry8.delete(0,END)
-                                cmt_entry8.insert(0,ref_data[16])
-                                cmt_entry9.delete(0,END)
-                                cmt_entry9.insert(0,ref_data[40])
-                                cmt_entry10.delete(0,END)
-                                cmt_entry10.insert(0,ref_data[17])
+                                    cmt_entry8.delete(0,END)
+                                    cmt_entry8.insert(0,ref_data[16])
+                                    cmt_entry9.delete(0,END)
+                                    cmt_entry9.insert(0,ref_data[40])
+                                    cmt_entry10.delete(0,END)
+                                    cmt_entry10.insert(0,ref_data[17])
+                                except:
+                                    
+                                    messagebox.showwarning("Fin sYs","Reference No and customer name is not matched")
+
+                            invs_sql = "SELECT * FROM app1_invoice WHERE cid_id=%s"
+                            invs_val = (comp_data[0],)
+                            fbcursor.execute(invs_sql,invs_val)
+                            invs_data = fbcursor.fetchall()
+                            inv_list = []
+                            if not invs_data:
+                                pass
+                            else:
+                                for i in invs_data:
+                                    inv_list.append(str( i[3]) + " - " + i[1])
+                            
+                            cm_ref = ttk.Combobox(sr_Canvas_1,width=19,font=('arial 15'),background='#2f516f')
+                            cm_ref['values'] = inv_list
+                            cm_ref.current(0)
+                            
+                            cm_ref.bind("<<ComboboxSelected>>",cm_show_ref)
 
 
-
-
-                            cm_ref = Entry(sr_Canvas_1,width=20,font=('arial 15'),background='#2f516f',foreground='white')
-                            cm_ref.bind("<Return>",cm_show_ref)
+                            # cm_ref = Entry(sr_Canvas_1,width=20,font=('arial 15'),background='#2f516f',foreground='white')
+                            # cm_ref.bind("<Return>",cm_show_ref)
                             sr_Canvas_1.create_window(0,0,anchor='nw',window=cm_ref,tags=("entry17"))
 
                             cm_label10 = Label(sr_Canvas_1,width=20,height=1,text="Deposit to:",font=('arial 12'),background='#1b3857',anchor="w",fg="white")
@@ -30408,6 +30560,549 @@ def main_sign_in():
 
                             cnt_entry2 = Entry(sr_Canvas_1,width=18,font=('arial 15'),background='#2f516f',foreground='white')
                             sr_Canvas_1.create_window(0,0,anchor='nw',window=cnt_entry2,tags=("entry57"))
+                            def cnt_lstd():
+
+                                
+                                try:
+                                    n1 = float(cnt_entry5.get())
+                                except:
+                                    n1=0.0
+                                try:
+                                    n2 = float(cnt_entry14.get())
+                                except:
+                                    n2 = 0.0
+                                try:
+                                    n3 = float(cnt_entry19.get())
+                                except:
+                                    n3 = 0.0
+                                try:
+                                    n4 = float(cnt_entry26.get())
+                                except:
+                                    n4 = 0.0
+                                
+                                sum_i = n1+n2+n3+n4
+                                cnt_entry7.delete(0, END)
+                                cnt_entry7.insert(0,round(sum_i,2))
+                            
+
+                                
+                                if cnt_entry6.get() == '28.0% GST (28%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(28/100)
+                                elif cnt_entry6.get() == '28.0% IGST (28%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(28/100)
+                                elif cnt_entry6.get() == '18.0% GST (18%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(18/100)
+                                elif cnt_entry6.get() == '18.0% IGST (18%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(18/100)
+                                elif cnt_entry6.get() == '15.0% ST (100%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(15/100)
+                                elif cnt_entry6.get() == '14.5% ST (100%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(14.5/100)
+                                elif cnt_entry6.get() == '14.00% ST (100%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(14/100)
+                                elif cnt_entry6.get() == '14.0% VAT (100%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(14/100)
+                                elif cnt_entry6.get() == '12.36% ST (100%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(12.36/100)
+                                elif cnt_entry6.get() == '12.0% GST (12%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(12/100)
+                                elif cnt_entry6.get() == '12.0% IGST (12%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(12/100)
+                                elif cnt_entry6.get() == '6.0% GST (6%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(6/100)
+                                elif cnt_entry6.get() == '6.0% IGST (6%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(6/100)
+                                elif cnt_entry6.get() == '5.0% GST (5%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(5/100)
+                                elif cnt_entry6.get() == '5.0% IGST (5%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(5/100)
+                                elif cnt_entry6.get() == '5.0% VAT (100%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(5/100)
+                                elif cnt_entry6.get() == '4.0% VAT (100%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(4/100)
+                                elif cnt_entry6.get() == '3.0% GST (3%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(3/100)
+                                elif cnt_entry6.get() == '3.0% IGST (3%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(3/100)
+                                elif cnt_entry6.get() == '2.0% CST (100%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(2/100)
+                                elif cnt_entry6.get() == '0.25% GST (O.25%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(0.25/100)
+                                elif cnt_entry6.get() == '0.25% IGST (0.25%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(0.25/100)
+                                elif cnt_entry6.get() == '0% GST (0%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(0/100)
+                                elif cnt_entry6.get() == '0% IGST (0%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(0/100)
+                                elif cnt_entry6.get() == 'Exempt GST (0%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(0/100)
+                                elif cnt_entry6.get() == 'Exempt IGST (0%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(0/100)
+                                elif cnt_entry6.get() == 'Out of Scope(0%)':
+                                    y1 = float(cnt_entry5.get())
+                                    t1 = y1*(0/100)
+                                else:
+                                    
+                                    if cnt_entry5.get()==' ':
+                                        y1 = float(cnt_entry5.get())
+                                    else:
+                                        y1=0.0
+                                    t1 = y1*(0/100)
+                                    pass
+
+                                try:
+                                    tm1  = t1
+                                except:
+                                    pass
+                                try:
+                                    tm2 = t2
+                                except:
+                                    tm2 = 0.0
+                                try:
+                                    tm3 = t3
+                                except:
+                                    tm3 = 0.0
+                                try:
+                                    tm4  = t4
+                                except:
+                                    tm4 = 0.0
+                                
+                                
+                                sum_ii = tm1+tm2+tm3+tm4
+                                cnt_entry8.delete(0, END)
+                                cnt_entry8.insert(0,round(sum_ii,2))
+
+                                try:
+                                    m1 = float(cnt_entry7.get())
+                                except:
+                                    m1 =0.0
+                                try:
+                                    m2 = float(cnt_entry8.get())
+                                except:
+                                    m2 =0.0
+
+                                sum_iii = m1+m2
+                                cnt_entry9.delete(0, END)
+                                cnt_entry9.insert(0,round(sum_iii,2))
+
+
+                                
+
+                                if cnt_entry15.get() == '28.0% GST (28%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(28/100)
+                                elif cnt_entry15.get() == '28.0% IGST (28%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(28/100)
+                                elif cnt_entry15.get() == '18.0% GST (18%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(18/100)
+                                elif cnt_entry15.get() == '18.0% IGST (18%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(18/100)
+                                elif cnt_entry15.get() == '15.0% ST (100%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(15/100)
+                                elif cnt_entry15.get() == '14.5% ST (100%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(14.5/100)
+                                elif cnt_entry15.get() == '14.00% ST (100%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(14/100)
+                                elif cnt_entry15.get() == '14.0% VAT (100%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(14/100)
+                                elif cnt_entry15.get() == '12.36% ST (100%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(12.36/100)
+                                elif cnt_entry15.get() == '12.0% GST (12%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(12/100)
+                                elif cnt_entry15.get() == '12.0% IGST (12%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(12/100)
+                                elif cnt_entry15.get() == '6.0% GST (6%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(6/100)
+                                elif cnt_entry15.get() == '6.0% IGST (6%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(6/100)
+                                elif cnt_entry15.get() == '5.0% GST (5%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(5/100)
+                                elif cnt_entry15.get() == '5.0% IGST (5%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(5/100)
+                                elif cnt_entry15.get() == '5.0% VAT (100%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(5/100)
+                                elif cnt_entry15.get() == '4.0% VAT (100%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(4/100)
+                                elif cnt_entry15.get() == '3.0% GST (3%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(3/100)
+                                elif cnt_entry15.get() == '3.0% IGST (3%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(3/100)
+                                elif cnt_entry15.get() == '2.0% CST (100%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(2/100)
+                                elif cnt_entry15.get() == '0.25% GST (O.25%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(0.25/100)
+                                elif cnt_entry15.get() == '0.25% IGST (0.25%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(0.25/100)
+                                elif cnt_entry15.get() == '0% GST (0%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(0/100)
+                                elif cnt_entry15.get() == '0% IGST (0%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(0/100)
+                                elif cnt_entry15.get() == 'Exempt GST (0%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(0/100)
+                                elif cnt_entry15.get() == 'Exempt IGST (0%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(0/100)
+                                elif cnt_entry15.get() == 'Out of Scope(0%)':
+                                    y2 = float(cnt_entry14.get())
+                                    t2 = y2*(0/100)
+                                else:
+                                    if cnt_entry14.get()==' ':
+                                        y2 = float(cnt_entry14.get())
+                                    else:
+                                        y2=0.0
+                                    t2 = y2*(0/100)
+                                    pass
+
+                                try:
+                                    tm1  = t1
+                                except:
+                                    pass
+                                try:
+                                    tm2 = t2
+                                except:
+                                    pass
+                                try:
+                                    tm3 = t3
+                                except:
+                                    tm3 = 0.0
+                                try:
+                                    tm4  = t4
+                                except:
+                                    tm4 = 0.0
+                                
+                                
+                                sum_ii = tm1+tm2+tm3+tm4
+                                cnt_entry9.delete(0, END)
+                                cnt_entry9.insert(0,round(sum_ii,2))
+
+                                try:
+                                    m1 = float(cnt_entry7.get())
+                                except:
+                                    m1 =0.0
+                                try:
+                                    m2 = float(cnt_entry8.get())
+                                except:
+                                    m2 =0.0
+
+                                sum_iii = m1+m2
+                                cnt_entry9.delete(0, END)
+                                cnt_entry9.insert(0,round(sum_iii,2))
+
+                                
+
+                                if cnt_entry21.get() == '28.0% GST (28%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(28/100)
+                                elif cnt_entry21.get() == '28.0% IGST (28%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(28/100)
+                                elif cnt_entry21.get() == '18.0% GST (18%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(18/100)
+                                elif cnt_entry21.get() == '18.0% IGST (18%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(18/100)
+                                elif cnt_entry21.get() == '15.0% ST (100%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(15/100)
+                                elif cnt_entry21.get() == '14.5% ST (100%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(14.5/100)
+                                elif cnt_entry21.get() == '14.00% ST (100%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(14/100)
+                                elif cnt_entry21.get() == '14.0% VAT (100%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(14/100)
+                                elif cnt_entry21.get() == '12.36% ST (100%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(12.36/100)
+                                elif cnt_entry21.get() == '12.0% GST (12%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(12/100)
+                                elif cnt_entry21.get() == '12.0% IGST (12%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(12/100)
+                                elif cnt_entry21.get() == '6.0% GST (6%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(6/100)
+                                elif cnt_entry21.get() == '6.0% IGST (6%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(6/100)
+                                elif cnt_entry21.get() == '5.0% GST (5%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(5/100)
+                                elif cnt_entry21.get() == '5.0% IGST (5%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(5/100)
+                                elif cnt_entry21.get() == '5.0% VAT (100%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(5/100)
+                                elif cnt_entry21.get() == '4.0% VAT (100%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(4/100)
+                                elif cnt_entry21.get() == '3.0% GST (3%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(3/100)
+                                elif cnt_entry21.get() == '3.0% IGST (3%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(3/100)
+                                elif cnt_entry21.get() == '2.0% CST (100%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(2/100)
+                                elif cnt_entry21.get() == '0.25% GST (O.25%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(0.25/100)
+                                elif cnt_entry21.get() == '0.25% IGST (0.25%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(0.25/100)
+                                elif cnt_entry21.get() == '0% GST (0%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(0/100)
+                                elif cnt_entry21.get() == '0% IGST (0%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(0/100)
+                                elif cnt_entry21.get() == 'Exempt GST (0%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(0/100)
+                                elif cnt_entry21.get() == 'Exempt IGST (0%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(0/100)
+                                elif cnt_entry21.get() == 'Out of Scope(0%)':
+                                    y3 = float(cnt_entry20.get())
+                                    t3 = y3*(0/100)
+                                else:
+                                    
+                                    if cnt_entry20.get()==' ':
+                                        y3 = float(cnt_entry20.get())
+                                    else:
+                                        y3=0.0
+                                    t3 = y3*(0/100)
+                                    pass
+
+                                try:
+                                    tm1  = t1
+                                except:
+                                    pass
+                                try:
+                                    tm2 = t2
+                                except:
+                                    pass
+                                try:
+                                    tm3 = t3
+                                except:
+                                    pass
+                                try:
+                                    tm4  = t4
+                                except:
+                                    tm4 = 0.0
+                                
+                                
+                                sum_ii = tm1+tm2+tm3+tm4
+                                cnt_entry8.delete(0, END)
+                                cnt_entry8.insert(0,round(sum_ii,2))
+
+                                try:
+                                    m1 = float(cnt_entry7.get())
+                                except:
+                                    m1 =0.0
+                                try:
+                                    m2 = float(cnt_entry8.get())
+                                except:
+                                    m2 =0.0
+
+                                sum_iii = m1+m2
+                                cnt_entry9.delete(0, END)
+                                cnt_entry9.insert(0,round(sum_iii,2))
+
+                                
+
+                                if cnt_entry27.get() == '28.0% GST (28%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(28/100)
+                                elif cnt_entry27.get() == '28.0% IGST (28%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(28/100)
+                                elif cnt_entry27.get() == '18.0% GST (18%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(18/100)
+                                elif cnt_entry27.get() == '18.0% IGST (18%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(18/100)
+                                elif cnt_entry27.get() == '15.0% ST (100%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(15/100)
+                                elif cnt_entry27.get() == '14.5% ST (100%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(14.5/100)
+                                elif cnt_entry27.get() == '14.00% ST (100%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(14/100)
+                                elif cnt_entry27.get() == '14.0% VAT (100%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(14/100)
+                                elif cnt_entry27.get() == '12.36% ST (100%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(12.36/100)
+                                elif cnt_entry27.get() == '12.0% GST (12%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(12/100)
+                                elif cnt_entry27.get() == '12.0% IGST (12%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(12/100)
+                                elif cnt_entry27.get() == '6.0% GST (6%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(6/100)
+                                elif cnt_entry27.get() == '6.0% IGST (6%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(6/100)
+                                elif cnt_entry27.get() == '5.0% GST (5%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(5/100)
+                                elif cnt_entry27.get() == '5.0% IGST (5%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(5/100)
+                                elif cnt_entry27.get() == '5.0% VAT (100%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(5/100)
+                                elif cnt_entry27.get() == '4.0% VAT (100%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(4/100)
+                                elif cnt_entry27.get() == '3.0% GST (3%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(3/100)
+                                elif cnt_entry27.get() == '3.0% IGST (3%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(3/100)
+                                elif cnt_entry27.get() == '2.0% CST (100%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(2/100)
+                                elif cnt_entry27.get() == '0.25% GST (O.25%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(0.25/100)
+                                elif cnt_entry27.get() == '0.25% IGST (0.25%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(0.25/100)
+                                elif cnt_entry27.get() == '0% GST (0%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(0/100)
+                                elif cnt_entry27.get() == '0% IGST (0%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(0/100)
+                                elif cnt_entry27.get() == 'Exempt GST (0%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(0/100)
+                                elif cnt_entry27.get() == 'Exempt IGST (0%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(0/100)
+                                elif cnt_entry27.get() == 'Out of Scope(0%)':
+                                    y4 = float(cnt_entry26.get())
+                                    t4 = y4*(0/100)
+                                else:
+                                    
+                                    if cnt_entry26.get()==' ':
+                                        y4 = float(cnt_entry26.get())
+                                    else:
+                                        y4=0.0
+                                    t4 = y4*(0/100)
+                                    pass
+
+                                try:
+                                    tm1  = t1
+                                except:
+                                    pass
+                                try:
+                                    tm2 = t2
+                                except:
+                                    pass
+                                try:
+                                    tm3 = t3
+                                except:
+                                    pass
+                                try:
+                                    tm4  = t4
+                                except:
+                                    pass
+                                
+                                
+                                sum_ii = tm1+tm2+tm3+tm4
+                                cnt_entry8.delete(0, END)
+                                cnt_entry8.insert(0,round(sum_ii,2))
+
+                                try:
+                                    m1 = float(cnt_entry7.get())
+                                except:
+                                    m1 =0.0
+                                try:
+                                    m2 = float(cnt_entry8.get())
+                                except:
+                                    m2 =0.0
+
+                                sum_iii = m1+m2
+                                cnt_entry9.delete(0, END)
+                                cnt_entry9.insert(0,round(sum_iii,2))
+
+                                # try:
+                                #     x1 = float(grd_str.get())
+                                # except:
+                                #     x1 = 0.0
+                                # try:
+                                #     x2 = float(amount_entry_1.get())
+                                # except:
+                                #     x2 = 0.0
+                                # sum_iv = x1-x2
+                                # bal_entry_1.delete(0, END)
+                                # bal_entry_1.insert(0,round(sum_iv,2))
 
                             def cnt_calculateTotal1(event,s):
                                     
@@ -30500,7 +31195,7 @@ def main_sign_in():
                                                 pass
                                             else:
                                                 cn_view_bundleitems(b=2)
-                                        elif s == 3:
+                                        elif s == 3: 
                                             if get_pro_data is not None:
                                                 tot = int(get_pro_data[12]) * int(qty)
                                                 cnt_entry20.delete(0,END)
@@ -30530,29 +31225,33 @@ def main_sign_in():
                                         cnt_entry7.delete(0,END)
                                         cnt_entry8.delete(0,END)
                                         cnt_entry9.delete(0,END)
-
+                                        
                                         def split_gst(string):
                                             pattern1 = r'\(+'
                                             pattern2 = r'\%+'
                                             split1 = re.split(pattern1,string)
                                             split2 = re.split(pattern2,split1[1])
-                                            return split2[0]
+                                            return split2
 
                                         #product gst -----------------------------
                                         try:
                                             gst_value1 = split_gst(cnt_entry6.get())
+                                            
                                         except:
                                             pass
                                         try:
                                             gst_value2 = split_gst(cnt_entry15.get())
+                                            
                                         except:
                                             pass
                                         try:
                                             gst_value3 = split_gst(cnt_entry21.get())
+                                            
                                         except:
                                             pass
                                         try:
                                             gst_value4 = split_gst(cnt_entry27.get())
+                                            
                                         except:
                                             pass
 
@@ -30844,6 +31543,11 @@ def main_sign_in():
 
                                         #All products ----------------------------------------------------------------------------------------
                                         if cnt_entry1.get() not in b_list and cnt_entry10.get() not in b_list and cnt_entry16.get() not in b_list and cnt_entry22.get() not in b_list:
+                                            print(gst_value1)
+                                            print(gst_value2)
+                                            print(gst_value3)
+                                            print(gst_value4)
+                                            
                                             cnt_entry7.insert(0,float(cnt_entry5.get()) + float(cnt_entry14.get()) + float(cnt_entry20.get()) + float(cnt_entry26.get()))
                                             if cnt_entry6.get() == "Choose" and cnt_entry15.get() == "Choose" and cnt_entry21.get() == "Choose" and cnt_entry27.get() == "Choose":
                                                 ptax_total = 0
@@ -31020,7 +31724,10 @@ def main_sign_in():
                                                 if gst_value4[0] == "0" or cnt_entry27.get() == "Exempt GST(0%)" or cnt_entry27.get() == "Out of Scope(0%)":
                                                     tax_tot4 = 0
                                                 else:
+
                                                     tax_tot4 = (float(cnt_entry26.get()) * float(float((gst_value4[0]))))/100
+                                                
+
                                                 ptax_total = tax_tot1 + tax_tot2 + tax_tot3 + tax_tot4
 
                                             cnt_entry8.insert(0,ptax_total)
@@ -31441,17 +32148,10 @@ def main_sign_in():
                                                 ptax_total = tax_tot3
                                             cnt_entry8.insert(0,tax_total1 + tax_total2 + tax_total4 + ptax_total)
                                         cnt_entry9.insert(0,float(cnt_entry7.get()) + float(float(cnt_entry8.get())))
-                                        print(tax_total1)
-                                        print(tax_total2)
-                                        print(tax_total4)
-                                        print(ptax_total)
+                                        
 
                                     else:
-                                        pass
-
-                                    
-
-                                    
+                                        pass              
                                 
                                 # except:
                                 #     pass
@@ -46323,7 +47023,7 @@ def main_sign_in():
                                                     pattern2 = r'\%+'
                                                     split1 = re.split(pattern1,string)
                                                     split2 = re.split(pattern2,split1[1])
-                                                    return split2[0]
+                                                    return split2
 
                                                 #product gst -----------------------------
                                                 try:
